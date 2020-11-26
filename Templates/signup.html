@@ -1,0 +1,48 @@
+{% load static %}
+<html>
+<head>
+    <link href="{% static 'css/sign.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div class="split-screen">
+        <div class="left">
+            <section class="copy">
+                <h1>Explore our Website by purchasing items.</h1>
+                <p>Over 10 + shopes on this website and also different different choices for your lunch, dinner, breakfast.</p>
+            </section>
+        </div>
+        <div class="right">
+            <form method="post" action=""> 
+                <section class="copy">
+                    <h2>Sign-up</h2>
+                    <div class="login-container">
+                        <p>Already have an account? <a href="#">
+                        <strong>Log-in</strong></a></p>
+                    </div>
+                </section>
+                <div class="input-container name">
+                    <label for="fname">Full Name:</label>
+                    <input id="fname" name="fname" type="text">
+                <div>
+                <div class="input-container email">
+                    <label for="email">Email:</label>
+                    <input id="email" name="email" type="email">
+                </div>
+                <div class="input-container password">
+                    <label for="password">Password:</label>
+                    <input id="password" name="password" placeholder="Must be at 6 character" type="password">
+                    <i class="far fa-eye-slash"></i>
+                </div>
+                <div class="input-container cta">
+                    <label class="checkbox-container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Sign up for email updates.
+                </div>
+                <button class="signup-btn" type="submit">Sign Up</button>
+                <section class="copy legal">
+                    <p><span class="small">By continuing. you agree to accept our <br> <a href="#">Privacy Policy</a> &amp; <a href="#">Terms of Service</a>.</span></p>
+                </section>
+            </form>
+        </div>  
+    </div>
