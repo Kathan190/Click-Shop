@@ -1,0 +1,101 @@
+{% load static %}
+<html>
+<head>
+    <meta name = "viewport">
+    <meta charset="utf-8">
+    <link href="static/about/css/about.css" rel="stylesheet">
+    <link href="{% static 'index/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Click & Shop</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign-Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login">Log-In</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<br><br>
+
+  <div class="about-section">
+        <h1>About Us</h1>
+        <p>Put some text about website and teams</p>
+        <p>Put some information about webiste and everyhtng you want to put here</p>
+    </div>
+
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card" style="height:50%">
+                <img src = "" alt="deepesh" style="width:80%">
+                <div class="container">
+                    <h2>Deepesh Patel</h2>
+                    <p class="title">Put your main role </p>
+                    <p>Put some text here and little bit information </p>
+                    <p>Email address</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+    <div class="column">
+    <div class="card" style="height:50%">
+      <img src="" alt="Kathan" style="width:80%">
+      <div class="container">
+        <h2>Kathan Sheth</h2>
+        <p class="title">Put yorr main role</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" style="height:50%">
+      <img src="" alt="John" style="width:80%">
+      <div class="container">
+        <h2>Janmesh Patel</h2>
+        <p class="title">Put your main role </p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>john@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+</body>
+</html>
