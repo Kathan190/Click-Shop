@@ -33,7 +33,7 @@
 	<!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Click & Shop</a>
+      <a class="navbar-brand" href="/">Click & Shop</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -54,9 +54,6 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sign-Up</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="login">Log-In</a>
           </li>
         </ul>
@@ -65,31 +62,31 @@
   </nav>
 
   <!-- Page Content -->
-	
-	<div class="container-login100" style="background-image: url('{%static "login/images/grocery.jpg" %}');">
-		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+	<br><br>
+	<div class="container-login100" style="background:#343a40">
+		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30" style="background:#343a40">
 			<form class="login100-form validate-form">
-				<span class="login100-form-title p-b-37">
-					Sign Up Here 
-				</span>
+					<center><h1 style="color:white">Sign Up</h1></center>
+				<br><br>
+				<div class=" m-b-20" style="background:white; border-radius: 15px;">
+					<input style="border-radius: 15px;" class="input100" type="text" name="firstname" placeholder="First Name" required>
+					<span  class="focus-input100"></span>
+				</div>
 
-                <div class="wrap-input100 m-b-20">
-                    <input class="input100" type="text" name="firstname" placeholder="First name" required>
-                    <span class="focus-input100"></span>
-                </div>
-
-				<div class="wrap-input100 m-b-20">
-					<input class="input100" type="text" name="username" placeholder=" email" required>
+				<div class="m-b-20" style="background:white; border-radius: 15px;">
+					<input style=" border-radius: 15px;" class="input100" type="text" name="email" placeholder="Email" required>
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 m-b-20">
-					<input class="input100" type="password" name="pass" placeholder="password" required>
+				<div class="m-b-20" style="background:white; border-radius: 15px;">
+					<input style=" border-radius: 15px;" class="input100" type="text" name="pass" placeholder="Password" required
+       minlength="0" maxlength="30" size="30">
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 m-b-20">
-					<input class="input100" type="text" name="contact" placeholder="Contact Number" required>
+				<div class="m-b-20" style="background:white; border-radius: 15px;">
+					<input style=" border-radius: 15px;" class="input100" type="text"  name="mobile" placeholder="Contact Number" required
+       minlength="0" maxlength="10" size="10">
 					<span class="focus-input100"></span>
 				</div>
 
@@ -99,13 +96,14 @@
 					</button>
 				</div>
 
-                <br><br>
-                <p><center>Already have an account, <a href="login" class="active"><h5 style="color:blue;">Login Here</h5></center></a></p>
-
+				<br>
+				<div class="container-login100-form-btn">
+					<p style="font-size:16px; color:white">Already have an account, &nbsp<a style="font-size:18px; color:#5ba8f5"  href="login"><u>Login Here<u></a> </p>
+				</div>
 
 				<div class="text-center p-t-57 p-b-20">
 					<span class="txt1">
-						Or Connect with 
+						Or login with
 					</span>
 				</div>
 
@@ -116,12 +114,6 @@
 
 					<a href="#" class="login100-social-item">
 						<img src="{% static 'login/images/icons/icon-google.png' %}" alt="GOOGLE">
-					</a>
-				</div>
-
-				<div class="text-center">
-					<a href="#" class="txt2 hov1">
-						Sign Up
 					</a>
 				</div>
 			</form>
